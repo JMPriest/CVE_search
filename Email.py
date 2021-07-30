@@ -12,6 +12,7 @@ class Email(object):
         if configuration.get('smtp_host') and configuration.get('smtp_port') \
                 and configuration.get('mail_sender') and configuration.get('mail_recipient'):
             self.emailObject.connect(configuration.get('smtp_host'), configuration.get('smtp_port'))
+            self.emailObject.login('','')
             self.message = MIMEMultipart()
             self.message['From'] = Header(configuration.get('mail_sender'), 'utf-8')
             self.message['To'] = Header(configuration.get('mail_recipient'), 'utf-8')
