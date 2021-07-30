@@ -5,7 +5,7 @@ search CVRF network to find new bug
 
 1.Load keywords from 'input.cfg'
 
-2.Load newest cvrf xml from url:https://cve.mitre.org/data/downloads/allitems-cvrf-year-{current year}.xml
+2.Load newest cvrf xml from url:https://cve.mitre.org/data/downloads/allitems-cvrf-year-{current_year}.xml
 
 3.Prepare 'result.xlsx'
 
