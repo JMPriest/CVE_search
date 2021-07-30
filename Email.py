@@ -21,10 +21,10 @@ class Email(object):
         else:
             self.emailObject.connect("mail.coscon.com", 25)
             self.message = MIMEMultipart()
-            self.message['From'] = Header('zhuwj2@coscon.com', 'utf-8')
-            self.message['To'] = Header('zhuwj2@coscon.com', 'utf-8')
-            self.sender = 'zhuwj2@coscon.com'
-            self.receiver = ['zhuwj2@coscon.com']
+            self.message['From'] = Header('13671653851@163.com', 'utf-8')
+            self.message['To'] = Header('13671653851@163.com', 'utf-8')
+            self.sender = '13671653851@163.com'
+            self.receiver = ['13671653851@163.com']
 
         self.message['Subject'] = Header(
             'CVE search --%s' % time.strftime('%Y-%m-%d', datetime.datetime.now().timetuple()))
